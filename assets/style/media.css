@@ -137,7 +137,7 @@
 }
 
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
 
 
     .block__title, .about_us__paintings h2,.clients__block h2, h2 {
@@ -153,11 +153,47 @@
         display: block;
     }
 
+    .nav {
+        display: none;
+        width: 100%;
+
+        position: absolute;
+        top: 100%;
+        left: 0;
+
+        background-color: #eb8b8d;
+    }
+
+    .nav.active {
+        display: block;
+    }
+
+    .nav__link {
+        display: block;
+        margin: 0;
+        padding: 8px 20px;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+
+
+
     .full-screen .full-screen__content .social-buttons {
         display: flex;
         flex-wrap: wrap;
         gap: 25px;
         align-self: flex-end;
+    }
+
+    .full-screen__title {
+        font-size: 120px;
+    }
+
+    .full-screen__text {
+        font-size: 16px;
     }
 
     .container {
@@ -172,6 +208,7 @@
     
     #features > .features > .features__item {
         width: 100%;
+        text-align: center;
     }
 
     .together {
@@ -205,18 +242,51 @@
         display: none;
     }
 
+    .footer__logo {
+        margin-top: 57px;
+    }
+
     .footer__message {
         order: 2;
     }
 
     .footer__logo__mobile {
         display: flex;
+        flex-direction: column;
+        align-items: center;
         order: 5;
+        gap: 4px;
+        margin-bottom: 66px;
+    }
+
+    .footer__logo__mobile::before {
+        content: "";
+        display: block;
+        width: 286px;
+        height: 1px;
+        margin: 42px auto;
+        
+        background-color: #FFFFFF;
+        opacity: 33%;
     }
 
     .footer__mobile__text {
         display: flex;
     }
+
+    .footer__logo__mobile h3 {
+        font-family: "Manrope", sans-serif;
+        font-size: 16px;
+
+        text-transform: uppercase;
+    }
+
+    .footer__message .footer__block h4 , .footer__text {
+        font-family: "Manrope", sans-serif;
+        font-size: 20px;
+    }
+
+    
 
    
 
@@ -225,7 +295,23 @@
 
 @media (max-width: 600px) {
 
+    .container {
+        max-width: 550px;
+        
+    }
 
+    .full-screen__title {
+        font-size: 85px;
+        padding-left: 20px;
+    }
+
+    .full-screen__text {
+        padding-left: 20px;
+    }
+
+    .full-screen__body .submit {
+        padding-left: 20px;
+    }
 
     .features__item {
         width: 80%;
@@ -235,7 +321,17 @@
 
 
 
+
+
 @media (max-width: 450px) {
+
+    .full-screen__title {
+        font-size: 65px;
+    }
+
+    .full-screen__text {
+        font-size: 16px;
+    }
 
 
 

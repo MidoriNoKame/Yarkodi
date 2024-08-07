@@ -28,24 +28,27 @@
    
                <img class="header-content__logo" src="assets/images/logo.svg" 
                alt="">
-   
-               <nav>
-                <span class="nav__menu">
-                    <a class="nav__link" href="#" data-scroll="#">О нас</a>
-                    <a class="nav__link" href="#" data-scroll="#">Проекты</a>
-                    <a class="nav__link" href="#" data-scroll="#">Контакты</a>
-                    <a class="nav__link" href="#" data-scroll="#">Сотрудничество</a>
-                </span>
-                   
-                <a class="nav__phone" href="#">+7 967 212-42-73</a>
-               </nav>
+
+                <nav class="nav" id="nav">
+                    <span class="nav__menu">
+                        <a class="nav__link" href="#" data-scroll="#">О нас</a>
+                        <a class="nav__link" href="#" data-scroll="#">Проекты</a>
+                        <a class="nav__link" href="#" data-scroll="#">Контакты</a>
+                        <a class="nav__link" href="#" data-scroll="#">Сотрудничество</a>
+                    </span>
+                    
+                    <a class="nav__phone" href="#">+7 967 212-42-73</a>
+                </nav>
+
+                <button class="nav-toggle" id="nav_toggle" type="button">
+                    <span class="nav-toggle__item">Menu</span>
+                </button>
            </div>
    
        </div>
    
     </header> 
 
-    <!-- Header -->
 
    
    
@@ -251,10 +254,7 @@
     </section>
 
 
-
-
     <!-- Partners -->
-
     <section class="partners-wrapper"> 
         <div class="container">
             <div class="partners partners__first-block">
@@ -292,6 +292,7 @@
     </section>
 
 
+    <!-- Сlients -->
     <section class="clients__block"> 
        
         <div class="container">
@@ -320,6 +321,7 @@
     </section>
 
 
+    <!-- Work -->
     <section class="work__block"> 
        
         <div class="container">
@@ -340,6 +342,8 @@
 
     </section>
 
+
+    <!-- Contacts -->
     <section class="contacts"> 
        
         <div class="container">
@@ -376,6 +380,7 @@
     </section>
 
 
+    <!-- Footer -->
     <footer class="footer">
         <div class="footer-bg-headline">
             <svg xmlns="http://www.w3.org/2000/svg" width="949" height="202" viewBox="0 0 949 202" fill="none">
@@ -448,7 +453,7 @@
                         <path d="M29.5445 29.1651L39.4146 32.2642C39.4994 32.2908 39.5733 32.2004 39.5304 32.1226L24.4694 4.80489C24.4146 4.70553 24.2629 4.76219 24.2867 4.87314L29.4776 29.0917C29.4851 29.1264 29.5106 29.1544 29.5445 29.1651Z" fill="#EBE6D7" fill-opacity="0.55"/>
                         </g>
                     </svg>
-                    Разработано в Saftech
+                    <h3>Разработано в Saftech</h3>
                 </div>
 
             </div>
@@ -461,4 +466,5 @@
    </body>
    <script src="js/swiper-bundle.min.js"></script>
    <script src="js/swiper.js"></script>
+   <script src="js/nav-toggle.js"></script>
    </html>
