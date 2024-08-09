@@ -139,6 +139,30 @@
 
 @media (max-width: 768px) {
 
+    /* .swiper-slide {
+        width: 80%;
+        margin: auto 0;
+    }
+    
+    .swiper-slide:nth-child(2n) {
+        width: 100%;
+    }
+        */
+
+    .slider-button-prev,
+    .slider-button-next {
+        display: none !important;
+    }
+
+    .swiper-slide:not(.swiper-slide-active) img {
+        filter: brightness(1);
+    }
+
+    /* .yarkodi-slide img { */
+        /* padding-left: 0;
+        padding-right: 0; */
+    /* } */
+
 
     .block__title, .about_us__paintings h2,.clients__block h2, h2 {
         font-size: 30px;
@@ -182,7 +206,7 @@
 
 
     .full-screen .full-screen__content .social-buttons {
-        display: flex;
+        display: none;
         flex-wrap: wrap;
         gap: 25px;
         align-self: flex-end;
@@ -194,6 +218,18 @@
 
     .full-screen__text {
         font-size: 16px;
+    }
+
+    .full-screen__body {
+        width: 100%;
+    }
+
+    .social-buttons {
+        display: none;
+    }
+
+    .full-screen__body .submit {
+        width: 100%;
     }
 
     .container {
@@ -226,6 +262,7 @@
         padding-bottom: 10px;
         padding-top: 10px;
     }
+
 
 
     .footer {
@@ -293,25 +330,26 @@
     
 }
 
+@media (max-width: 680px) {
+
+    .container {
+        max-width: 570px;  
+    }
+}
+
+
+
 @media (max-width: 600px) {
 
     .container {
-        max-width: 550px;
-        
+        max-width: 500px;  
     }
 
     .full-screen__title {
         font-size: 85px;
-        padding-left: 20px;
     }
 
-    .full-screen__text {
-        padding-left: 20px;
-    }
 
-    .full-screen__body .submit {
-        padding-left: 20px;
-    }
 
     .features__item {
         width: 80%;
@@ -319,11 +357,28 @@
 }
 
 
+@media (max-width: 530px) {
+
+    .container {
+        max-width: 450px;  
+    }
+
+    .wa__button__work {
+        margin: auto;
+        display: block;
+    }
+
+}
 
 
 
 
 @media (max-width: 450px) {
+
+    .container {
+        max-width: 360px;
+        
+    }
 
     .full-screen__title {
         font-size: 65px;
@@ -337,5 +392,12 @@
 
     .features__item {
         width: 100%;
+    }
+}
+
+@media (max-width: 375px) {
+
+    .container {
+        max-width: 325px; 
     }
 }
