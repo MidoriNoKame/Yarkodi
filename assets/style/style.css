@@ -792,7 +792,7 @@ a {
     height: 0.3px;
     margin: 30px auto;
     background-color: #C19A5B;
-    transform: rotate(180deg);
+    transform: rotate(90deg);
 }
 
 .contact__mail, .contact__item {
