@@ -96,7 +96,7 @@ header {
     background-color: rgba(0,0,0, .1);
 
     backdrop-filter: blur(4px);
-    z-index: 1;
+    z-index: 2;
     border-bottom: 1px solid;
     /* border-image: linear-gradient(rgba(255,255,255, 1) 0%, rgba(255,255,255, 1) 50%, rgba(255,255,255, 1) 100%); */
     border-image: linear-gradient(to right, rgba(255,255,255, 0), rgba(255,255,255, 1),  rgba(255,255,255, 0) ) 50% 0%;
@@ -108,6 +108,11 @@ header {
     align-items: center;
 
 
+}
+
+.header-content__logo {
+    padding-top: 7px;
+    padding-bottom: 7px;
 }
 
 .burger__icon {
@@ -762,7 +767,7 @@ a {
     align-items: center;
 }
   
-a:link {
+.contacts_block a:link {
     color: #1f1f1f;
 }
 
@@ -784,10 +789,10 @@ a:link {
     content: "";
     display: inline-block;
     width: 60px;
-    height: 0.5px;
+    height: 0.3px;
     margin: 30px auto;
     background-color: #C19A5B;
-    transform: rotate(90deg);
+    transform: rotate(180deg);
 }
 
 .contact__mail, .contact__item {
@@ -832,6 +837,17 @@ a:link {
     max-width:100%;
     height:auto;
 }
+
+.back-to-top {
+        cursor: pointer;
+        transition: 0.3s all;
+}
+    
+.back-to-topp.active {
+    bottom: 50px;
+    transition: 0.3s all;
+}
+
 
 
 
