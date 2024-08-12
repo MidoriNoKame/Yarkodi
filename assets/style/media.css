@@ -140,6 +140,19 @@
 @media (max-width: 768px) {
 
 
+
+    .full-screen__video {
+        display: none;
+    }
+
+    .full-screen {
+        background: url(../images/Bg-mob.png) no-repeat;
+
+        background-size: cover;
+        backdrop-filter: blur(10px);
+    }
+
+
     .slider-button-prev,
     .slider-button-next {
         display: none !important;
@@ -166,14 +179,17 @@
     .nav {
         display: none;
         width: 100%;
-
-        position: absolute;
-        top: 0;
-        left: 0;
-
         background: url(../images/bg-burger.png) no-repeat;
-        background-size: 100%;
+        position: absolute;
+        top: 120px;
+        left: 0;
+        background-size: cover;
         height: 100vh;
+    }
+
+    .header-bg-active {
+        background: url(../images/bg-burger.png) no-repeat;
+        background-size: cover;
     }
 
     .nav.active {
@@ -213,7 +229,19 @@
     }
 
     .nav__menu a:first-child {
-        margin-top: 135px;
+        margin-top: 65px;
+    }
+
+    .nav .social-buttons {
+        display: flex;
+        gap: 25px;
+        position: absolute;
+        left: 20px;
+        bottom: 179px;
+    }
+
+    .nav .social-buttons a {
+        margin-right: 0;
     }
 
     .nav__phone::after {
@@ -335,6 +363,7 @@
         order: 5;
         gap: 4px;
         margin-bottom: 66px;
+        color: #EBE6D78C;
     }
 
     .footer__logo__mobile::before {
@@ -352,10 +381,9 @@
         display: flex;
     }
 
-    .footer__logo__mobile h3 {
+    .footer__logo__mobile span {
         font-family: "Manrope", sans-serif;
         font-size: 16px;
-
         text-transform: uppercase;
     }
 
@@ -406,7 +434,6 @@
 
     .wa__button__work {
         margin: auto;
-        display: block;
     }
 
 }
