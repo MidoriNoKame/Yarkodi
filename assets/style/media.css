@@ -403,6 +403,10 @@
         font-size: 20px;
     }
 
+    .footer__block .footer__logo {
+        gap: 0;
+    }
+
     
 
    

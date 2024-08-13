@@ -283,7 +283,7 @@ nav a:hover {
 
     object-fit: cover;
 
-    filter: brightness(80%);
+    filter: brightness(85%);
 
     z-index: -1;
 
@@ -308,6 +308,16 @@ nav a:hover {
     font-size: 16px;
 
 }
+
+.full-screen__body .submit:hover {
+    background-color: #D6D1C3;
+}
+
+.full-screen__body .submit:focus, .full-screen__body .submit:active {
+    background-color: #fff;
+}
+
+
 
 .full-screen .full-screen__content .social-buttons {
     display: flex;
@@ -728,6 +738,15 @@ nav a:hover {
     color: #1F1F1F;
 }
 
+.wa__button__work:hover {
+    background-color: #F3F1E9;
+}
+
+.wa__button__work:focus, .wa__button__work:active {
+    background-color: #DDD8CA;
+}
+
+
 .wa__button__work span {
     text-decoration: underline;
     margin-left: 5px;
@@ -937,13 +956,13 @@ a {
 
 .footer__title {
     color: #FFF;
+    padding-left: 14px;
 }
 
 
 .footer__block {
     display: flex;
     align-items: center;
-    gap: 14px;
     padding-bottom: 21px;
 }
 
