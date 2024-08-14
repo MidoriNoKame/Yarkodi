@@ -966,6 +966,10 @@ a {
     padding-bottom: 21px;
 }
 
+.footer__message{
+    transform: scale(0.8);
+}
+
 .footer__last__block {
     display: flex;
     flex-direction: column;

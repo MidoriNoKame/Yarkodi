@@ -412,6 +412,10 @@
         width: 100%;
     }
 
+    .footer__message{
+        transform: scale(1);
+    }
+
     
 
    
