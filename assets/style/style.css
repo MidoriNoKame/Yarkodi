@@ -483,6 +483,10 @@ nav a:hover {
     margin-bottom: 85px;
 }
 
+.slider__video {
+    margin-bottom: 85px;
+}
+
     .swiper-slide {
         text-align: center;
         font-size: 18px;
@@ -504,6 +508,7 @@ nav a:hover {
         height: 100%;
         object-fit: cover;
     }
+
 
 
 
@@ -705,9 +710,98 @@ nav a:hover {
 .clients img{
     padding-bottom: 98px;
     padding-top: 51px;
+    transition: .5s;
+    max-width: 303px;
 }
 
 
+.mail__img input[type=checkbox] {
+    display: none
+}
+
+.mail__img img {
+    transition: transform 0.25s ease;
+    cursor: zoom-in;
+}
+
+
+.clients__block .pop_up {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.8);
+    display: none;
+}
+
+.clients__block .pop_up img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35%;
+}
+
+.clients__block .pop_up span {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    background: #e7e5e5;
+    font-size: 28px;
+    font-weight: 900;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 30%;
+}
+
+
+
+
+
+
+
+/*video__pres*/
+
+.video__pres {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 35px;
+}
+
+.video__review{
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.video__button {
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #b77d0d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+
+    width: 279px;
+    height: 56px;
+    margin-bottom: 56px;
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color: #1F1F1F;
+}
+
+.video__button__block{
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
 
 /*work__block*/
 
