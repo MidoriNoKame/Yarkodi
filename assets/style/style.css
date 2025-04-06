@@ -724,6 +724,12 @@ nav a:hover {
     cursor: zoom-in;
 }
 
+.pop_up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .clients__block .pop_up {
     position: fixed;
@@ -736,11 +742,12 @@ nav a:hover {
 }
 
 .clients__block .pop_up img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 1120px;
+    height: calc(100% - 48px);
+    cursor: zoom-out; 
 }
 
 .clients__block .pop_up span {
