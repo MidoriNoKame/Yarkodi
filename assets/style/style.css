@@ -18,6 +18,10 @@ body, html {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+
+    * {
+        font-family: "Manrope", sans-serif;
+    }
 }
 
 
@@ -36,6 +40,7 @@ h2 {
     font-family: 'Kudryashev Headline';
     font-weight: 500;
     font-size: 46px;
+    color: #201940;
 }
 
 *{
@@ -51,17 +56,18 @@ h4 {
     font-family: "Manrope", sans-serif;
     font-size: 20px;
     font-weight: 400;
+    color: #201940;
 }
 
 
 .block__title::after {
     content: "";
     display: block;
-    width: 60px;
+    width: 100px;
     height: 1.5px;
-    margin: 16px auto;
+    margin: 10px auto;
     
-    background-color: #C19A5B;
+    background-color: #F48131;
 } 
 
 .block__title {
@@ -73,7 +79,7 @@ h4 {
 .partners__title {
     text-align: center;
 
-    color: #FFF;
+    color: #FEE0C0;
 }
 
 
@@ -100,13 +106,10 @@ h4 {
 header {
     position: absolute;
     width: 100%;
-    background-color: rgba(0,0,0, .1);
-
-    backdrop-filter: blur(4px);
+    background-color: #201940;
     z-index: 2;
-    border-bottom: 1px solid;
-    /* border-image: linear-gradient(rgba(255,255,255, 1) 0%, rgba(255,255,255, 1) 50%, rgba(255,255,255, 1) 100%); */
-    border-image: linear-gradient(to right, rgba(255,255,255, 0), rgba(255,255,255, 1),  rgba(255,255,255, 0) ) 50% 0%;
+    border-bottom: 1px solid #9A8A8B;
+    
 }
 
 .header-content {
@@ -148,40 +151,83 @@ header {
 
 
 nav a {
+    position: relative;
     text-decoration: none;
-    margin-right: 45px;
+    margin-right: 25px;
     color: var(--black);
     display: inline-block;
-    color: #FFFFFF;
+    color: #FEE0C0;
 
     transition: all .4s ease;
 }
 
-
-/* 
-nav a:hover {
-    transform: scale(1.05);
-} */
-
-.nav__menu a:last-of-type {
-    position: relative;
+.nav__button {
+    margin-right: 17px;
 }
 
-.nav__menu a:last-of-type:after {
-    content: "";
-    display: inline-block;
+
+nav a:not(.nav__button) {
+    &::after {
+        position: absolute;
+        display: none;
+        bottom: -5px;
+        left: 0;
+        content: "";
+        height: 1px;
+        width: 100%;
+        background-color: #FEE0C0;
+    }
+}
+
+nav a:hover{
+    position: relative;
+
+    &::after {
+        display: block;
+    }
+}
+
+nav a:active {
+    &::after {
+        display: block;
+        background-color: #F5EEE7;
+    }
+}
+
+
+
+
+.nav__menu {
+    display: flex;
+    align-items: center;
+
+    a:last-of-type {
+        position: relative;
+    }
+
+    @media (max-width: 950px) { 
+        display: block;
+
+        .divider {
+            display: none;
+        }
+    }
+}
+
+.divider {
+    display: block;
     width: 60px;
     height: 0.5px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: #9A8A8B;
     transform: rotate(90deg);
-    position: absolute;
-    top: 19px;
+    /* position: absolute; */
+    /* top: 19px; */
 }
 
  /* Nav toggle */
  .nav-toggle {
     width: 30px;
-    padding: 32px 0;
+    padding: 24px 0;
     display: none;
 
     font-size: 0;
@@ -206,7 +252,7 @@ nav a:hover {
     width: 100%;
     height: 2px;
 
-    background-color: #fff;
+    background-color: #FEE0C0;
 
     position: absolute;
     top: 10px;
@@ -231,15 +277,66 @@ nav a:hover {
     transform: rotate(-45deg);
 }
 
+main {
+    padding-top:92px;
 
+     @media (max-width: 950px) {
+        padding-top: 70px;
+    }
+}
 
+.project {
+    background-color: #201940; 
+}
 
-.full-screen {
+.full-screen { 
     overflow: hidden;
-    height: 872px;
-
-    max-width: 100%;
+    /* height: 872px; */
+    /* max-width: 100%; */
     position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 85px 0;
+    gap: 147px;
+    align-items: center;
+
+    @media (max-width: 950px) {
+        flex-direction: column;
+        gap: 77px;
+    }
+
+    .full-screen__video-wrapper {
+        position: relative;
+    }
+    .full-screen__border {
+        position: absolute;
+        height: 636px;
+        z-index: 1;
+        top: -45px;
+        left: 30px;
+
+        @media (max-width: 950px) {
+            height: 480px;
+            top: -22px;
+            left: 18px;
+        }
+    }
+    .full-screen__video-container {
+        height: 548px;
+        width: 430px;
+        overflow: hidden;
+
+        @media (max-width: 950px) {
+            height: 436px;
+            width: 325px;
+            max-width: 100%
+        }
+
+        .full-screen__video {
+            width: 100%;
+            height: 100%;
+        }
+    }
 }
 
 .full-screen .container {
@@ -264,44 +361,53 @@ nav a:hover {
     font-family: Kudryashev Display;
     font-weight: 500;
     font-size: 140px;
-    color: #FFFFFF;
+    color: #FEE0C0;
 }
 
 .full-screen__text {
     font-family: "Manrope", sans-serif;
     font-size: 20px;
-    color: #FFFFFF;
+    color: #FEE0C0;
     margin-bottom: 38px;
 }
 
-.full-screen__video {
+/* .full-screen__video {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: 214px;
+    right: 215px;
+    width: 430px;
+    height: 548px;
 
     object-fit: cover;
 
     filter: brightness(85%);
 
-    z-index: -1;
+    z-index: 1;
 
     overflow: hidden;
 
+} */
+
+.bg__video {
+    display: block;
+    position: absolute;
+    bottom: 41px;
+    left: 78px;
+    width: 276px;
+    height: 370px;
+    object-fit: cover;
+    z-index: 1;
 }
 
 .full-screen__body .submit {
-    border-radius: 5px;
-    background-color: #EBE6D7;
+    background-color: #FEE0C0;
     border-color: #EBE6D7;
 
     width: 279px;
     height: 56px;
 
-    font-family: "Montserrat", sans-serif;
     font-weight: 600;
-    color: #1F1F1F;
+    color: #201940;
 
     text-align: center;
     justify-content: center;
@@ -310,7 +416,7 @@ nav a:hover {
 }
 
 .full-screen__body .submit:hover {
-    background-color: #D6D1C3;
+    background-color: #F3CCA3;
 }
 
 .full-screen__body .submit:focus, .full-screen__body .submit:active {
@@ -320,7 +426,6 @@ nav a:hover {
 
 
 .full-screen .full-screen__content .social-buttons {
-    display: flex;
     gap: 25px;
     align-self: flex-end;
 }
@@ -334,13 +439,13 @@ nav a:hover {
 
 .Priority__container {
     background-color: #F9F5EF;
-    padding-bottom: 100px;
+    padding-bottom: 70px;
 }
 
 .Priority__container h2 {
     text-align: center;
 
-    padding-top: 88px;
+    padding-top: 55px;
 }
 
 .features {
@@ -348,7 +453,7 @@ nav a:hover {
     flex-wrap: wrap;
     background-color: #F9F5EF;
     height: 100%;
-    padding-top: 100px;
+    padding-top: 35px;
 }
 
 .features__item {
@@ -369,7 +474,7 @@ nav a:hover {
     font-family: Kudryashev Headline;
     font-weight: 400;
     font-size: 22px;
-    color: #1E1E1E;
+    color: #201940;
     text-transform: uppercase;
 }
 
@@ -379,7 +484,7 @@ nav a:hover {
     font-weight: 300;
 
     line-height: 1.5;
-    color: #1E1E1E;
+    color: #201940;
 }
 
 /*About us*/
@@ -427,8 +532,13 @@ nav a:hover {
     font-size: 55px;
 }
 
+.about_us__text1 {
+    padding-top: 20px;
+}
+
 .about_us__text1, .about_us__text2 {
     text-align: center;
+    color: #201940;
 }
 
 
@@ -469,7 +579,7 @@ nav a:hover {
     font-size: 20px;
     font-weight: 400;
     text-align: center;
-    color: #1E1E1E;
+    color: #201940;
     margin-bottom: 35px;
 }
 
@@ -478,7 +588,7 @@ nav a:hover {
     font-size: 20px;
     font-weight: 400;
     text-align: center;
-    color: #1E1E1E;
+    color: #201940;
     margin-top: 43px;
     margin-bottom: 85px;
 }
@@ -641,7 +751,7 @@ nav a:hover {
     background-size: cover;;
 
     background-color: #FFF;
-    padding-bottom: 132px;
+    padding-bottom: 70px;
     padding-top: 65px;
 }
 
@@ -691,11 +801,11 @@ nav a:hover {
     font-size: 55px;
 
     text-align: center;
-    padding-top: 100px;
+    padding-top: 55px;
 }
 
 .clients__block {
-    background-color: #F9F5EF;
+    background-color: #fff;
 }
 
 .clients {
@@ -705,6 +815,7 @@ nav a:hover {
     justify-content: center;
 
     gap: 15px;
+    margin-bottom:20px;
 }
 
 .clients img{
@@ -784,11 +895,12 @@ nav a:hover {
     width: 80%;
     height: 80%;
     object-fit: cover;
+    border-style: groove;
+    margin-top: 30px;
 }
 
 .video__button {
-    border-radius: 5px;
-    background-color: #fff;
+    background-color: #F48233;
     border: 1px solid #b77d0d;
     display: flex;
     justify-content: center;
@@ -799,9 +911,8 @@ nav a:hover {
     height: 56px;
     margin-bottom: 56px;
 
-    font-family: "Montserrat", sans-serif;
     font-weight: 600;
-    color: #1F1F1F;
+    color: #ffffff;
 }
 
 .video__button__block{
@@ -817,13 +928,12 @@ nav a:hover {
 }
 
 .work__block {
-    background-color: #EBE6D7;
+    background-color: #F5EEE7;
 }
 
 
 .wa__button__work {
-    border-radius: 5px;
-    background-color: #fff;
+    background-color: #F48233;
     border: 1px solid #b77d0d;
     display: flex;
     justify-content: center;
@@ -834,17 +944,16 @@ nav a:hover {
     height: 56px;
     margin-bottom: 56px;
 
-    font-family: "Montserrat", sans-serif;
     font-weight: 600;
-    color: #1F1F1F;
+    color: #fff;
 }
 
 .wa__button__work:hover {
-    background-color: #F3F1E9;
+    background-color: #E97D34;
 }
 
 .wa__button__work:focus, .wa__button__work:active {
-    background-color: #DDD8CA;
+    background-color: #F79D5A;
 }
 
 
@@ -871,10 +980,11 @@ nav a:hover {
 .together__block__info h2::after {
     content: "";
     display: block;
-    width: 60px;
+    width: 100px;
     height: 1.5px;
+    margin-top: 5px;
     
-    background-color: #C19A5B;
+    background-color: #F48131;
 } 
 
 .together__block__info {
@@ -908,7 +1018,7 @@ nav a:hover {
 /*contacts*/
 
 .contacts {
-    background-color: #F9F5EF;
+    background-color: #fff;
 }
 
 
@@ -949,7 +1059,7 @@ a {
     width: 60px;
     height: 0.3px;
     margin: 30px auto;
-    background-color: #C19A5B;
+    background-color: #F48131;
     transform: rotate(90deg);
 }
 
@@ -965,16 +1075,16 @@ a {
 
 
 .contacts_block h2 {
-    padding-top: 85px;
+    padding-top: 45px;
 }
 
 .contacts_block h2::after {
     content: "";
     display: block;
-    width: 60px;
+    width: 100px;
     height: 1.5px;
     
-    background-color: #C19A5B;
+    background-color: #F48131;
 } 
 
 .contacts_block h4 {
@@ -988,9 +1098,9 @@ a {
 
 .contacts__img {
     float: right;
-    padding-top: 85px;
-    padding-bottom: 85px;
-    padding-left: 82px;
+    padding-top: 45px;
+    padding-bottom: 75px;
+    padding-left: 200px;
 
     max-width:100%;
     height:auto;
@@ -1019,7 +1129,7 @@ a {
 
     background-color: #FFF;
     position: relative;
-    color: #FFF;
+    color: #FEE6C8;
     height: 243px;
 }
 
@@ -1051,12 +1161,10 @@ a {
     justify-self: center;
 }
 
-.footer__text {
-    font-family: monrope;
-}
+
 
 .footer__title {
-    color: #FFF;
+    color: #FEE6C8;
     padding-left: 14px;
 }
 
@@ -1064,12 +1172,29 @@ a {
 .footer__block {
     display: flex;
     align-items: center;
-    padding-bottom: 21px;
+    padding-bottom: 15px;
+
+   
 }
 
-.footer__message{
-    transform: scale(0.8);
+.footer__message {
+    .footer__block {
+        display: flex;
+        align-items: center;
+        padding-bottom: 6px;
+            a {
+                font-size: 20px;   
+            }
+            svg {
+               width: 42px; 
+            }
+    }
+
 }
+
+
+
+
 
 .footer__last__block {
     display: flex;

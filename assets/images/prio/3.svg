@@ -1,19 +1,19 @@
 <svg width="140" height="140" viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M131 34.5V12C131 9.23858 128.761 7 126 7H15C12.2386 7 10 9.23858 10 12V123M131 54.5V127C131 129.761 128.761 132 126 132H15C12.2386 132 10 129.761 10 127V123M10 123H116" stroke="#B77D0D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<rect x="24" y="24" width="92" height="22" stroke="#B77D0D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<rect x="24" y="61" width="16" height="11" stroke="#B77D0D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<rect x="24" y="79" width="16" height="11" stroke="#B77D0D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<rect x="24" y="97" width="16" height="11" stroke="#B77D0D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<rect x="49" y="61" width="16" height="11" stroke="#B77D0D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<rect x="49" y="79" width="16" height="11" stroke="#B77D0D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<rect x="49" y="97" width="16" height="11" stroke="#B77D0D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<rect x="75" y="61" width="16" height="11" stroke="#B77D0D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<rect x="75" y="79" width="16" height="11" stroke="#B77D0D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<rect x="75" y="97" width="16" height="11" stroke="#B77D0D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<rect x="100" y="61" width="16" height="11" stroke="#B77D0D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M32 40L42 30" stroke="#B77D0D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M41 40L51 30" stroke="#B77D0D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<rect x="100" y="79" width="16" height="29" stroke="#B77D0D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M105 91H111" stroke="#B77D0D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M105 96H111" stroke="#B77D0D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M131 34.5V12C131 9.23858 128.761 7 126 7H15C12.2386 7 10 9.23858 10 12V123M131 54.5V127C131 129.761 128.761 132 126 132H15C12.2386 132 10 129.761 10 127V123M10 123H116" stroke="#F48233" stroke-width="1.7" stroke-linecap="square"/>
+<rect x="24" y="24" width="92" height="22" stroke="#F48233" stroke-width="1.7" stroke-linecap="square"/>
+<rect x="24" y="61" width="16" height="11" stroke="#F48233" stroke-width="1.7" stroke-linecap="square"/>
+<rect x="24" y="79" width="16" height="11" stroke="#F48233" stroke-width="1.7" stroke-linecap="square"/>
+<rect x="24" y="97" width="16" height="11" stroke="#F48233" stroke-width="1.7" stroke-linecap="square"/>
+<rect x="49" y="61" width="16" height="11" stroke="#F48233" stroke-width="1.7" stroke-linecap="square"/>
+<rect x="49" y="79" width="16" height="11" stroke="#F48233" stroke-width="1.7" stroke-linecap="square"/>
+<rect x="49" y="97" width="16" height="11" stroke="#F48233" stroke-width="1.7" stroke-linecap="square"/>
+<rect x="75" y="61" width="16" height="11" stroke="#F48233" stroke-width="1.7" stroke-linecap="square"/>
+<rect x="75" y="79" width="16" height="11" stroke="#F48233" stroke-width="1.7" stroke-linecap="square"/>
+<rect x="75" y="97" width="16" height="11" stroke="#F48233" stroke-width="1.7" stroke-linecap="square"/>
+<rect x="100" y="61" width="16" height="11" stroke="#F48233" stroke-width="1.7" stroke-linecap="square"/>
+<path d="M32 40L42 30" stroke="#F48233" stroke-width="1.7" stroke-linecap="square"/>
+<path d="M41 40L51 30" stroke="#F48233" stroke-width="1.7" stroke-linecap="square"/>
+<rect x="100" y="79" width="16" height="29" stroke="#F48233" stroke-width="1.7" stroke-linecap="square"/>
+<path d="M105 91H111" stroke="#F48233" stroke-width="1.7" stroke-linecap="square"/>
+<path d="M105 96H111" stroke="#F48233" stroke-width="1.7" stroke-linecap="square"/>
 </svg>

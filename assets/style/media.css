@@ -63,7 +63,7 @@
 
     .about_us {
         height: auto;
-        padding: 72px 0;
+        padding: 55px 0;
     }
 
     .about_us__paintings {
@@ -93,13 +93,32 @@
         width: 50%;
         padding: 0 40px;
         margin: 25px 0;
-        text-align: left;
+        text-align: center;
     }
 
     .contacts_block {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+
+        h2 {
+            text-align: center;
+        }
+
+        h4 {
+            text-align: center;
+        }
+    }
+    .contacts_block h2::after {
+        margin: auto;
+    }
+
+    .partners__first-block, 
+    .partners__second-block, 
+    .features__icon {
+        gap: 0px;
+        margin-bottom: 0px !important;
+        margin-top: 0px !important;
     }
 
     
@@ -113,7 +132,7 @@
     
         background-color: #FFF;
         position: relative;
-        color: #FFF;
+        color: #FEE6C8;
     }
 
     .footer .footer-bg-headline {
@@ -149,9 +168,8 @@
         display: none;
     }
 
-
-    .full-screen__video {
-        display: none;
+    .nav__button {
+        display: none !important;
     }
 
     .full-screen {
@@ -188,17 +206,29 @@
 
     .desktop-hidden {
         display: block;
-    }
+    } 
 
     .nav {
         display: none;
         width: 100%;
         background: url(../images/bg-burger.png) no-repeat;
         position: absolute;
-        top: 120px;
+        top: 90px;
         left: 0;
         background-size: cover;
         height: 100vh;
+    }
+
+    header {
+        height: 70px;
+
+        .header-content__logo {
+            height: 70px;
+        }
+
+        .nav-toggle {
+            top: 12px;
+        }
     }
 
     .header-bg-active {
@@ -213,7 +243,7 @@
     .nav__link {
         display: block;
         margin: 0;
-        padding: 8px 20px;
+        padding: 17px 20px;
     }
 
     .nav-toggle {
@@ -227,19 +257,6 @@
 
     .nav a {
         text-transform: uppercase;
-    }
-
-    .nav__menu a:last-of-type:after {
-        content: "";
-        display: block;
-        width: 60px;
-        height: 0.5px;
-        
-        background-color: #C19A5B;
-
-        position: relative;
-        transform: none;
-        top: 0;
     }
 
     .nav__menu a:first-child {
@@ -278,7 +295,43 @@
 
     .header-content__logo {
         z-index: 2;
+        transform: scale(0.85);
+
     }
+
+
+.together__block__info h2::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 1.5px;
+    margin: auto;
+    margin-top: 5px;
+    
+    background-color: #F48131;
+} 
+
+.together__block__info {
+    max-width: 50%;
+    
+}
+
+
+.together h2 {
+    padding-top: 56px;
+    text-align: center;
+}
+
+.together h4 {
+    font-family: "Manrope", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+
+    padding-top: 32px;
+    padding-bottom: 50px;
+
+    text-align: center;
+}
 
     
 
@@ -289,21 +342,13 @@
 
     .video__review {
         width: 100%;
+        margin-top: 30px;
     }
 
     .video__button{
         width: 100%;
     }
-
-
-
-
-    .full-screen .full-screen__content .social-buttons {
-        display: none;
-        flex-wrap: wrap;
-        gap: 25px;
-        align-self: flex-end;
-    }
+    
 
     .full-screen__title {
         font-size: 120px;
@@ -351,6 +396,19 @@
         max-width: 100%; 
     }
 
+    .clients {
+        flex-direction: row;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+
+        .mail__img:nth-of-type(1) {
+            margin-left: 940px;
+        }
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
     .clients img {
         padding-bottom: 10px;
         padding-top: 10px;
@@ -379,7 +437,8 @@
     }
 
     .footer__logo {
-        margin-top: 57px;
+        border-bottom: 1px solid #9A8A8B;
+        line-height: 0;
     }
 
     .footer__message {
@@ -394,6 +453,12 @@
         gap: 4px;
         margin-bottom: 66px;
         color: #EBE6D78C;
+    }
+
+
+    .contact__center {
+        width: 272px;
+        margin: auto;
     }
 
     .footer__logo__mobile::before {
@@ -414,12 +479,13 @@
     .footer__logo__mobile span {
         font-family: "Manrope", sans-serif;
         font-size: 16px;
-        text-transform: uppercase;
+        color: #9A8A8B;
     }
 
     .footer__message .footer__block h4 , .footer__text {
         font-family: "Manrope", sans-serif;
         font-size: 20px;
+        margin-bottom: 60px;
     }
 
     .footer__block .footer__logo {
